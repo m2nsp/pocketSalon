@@ -19,3 +19,7 @@
 
 ## ⚙️ERD
 ![데이터베이스 ERD](./데이터베이스_erd.png)
+
+## ✍️API 명세
+https://m2nsp.gitbook.io/m2nsp/
+
