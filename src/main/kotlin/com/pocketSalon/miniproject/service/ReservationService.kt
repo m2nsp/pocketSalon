@@ -1,10 +1,10 @@
 package com.pocketSalon.miniproject.service
 
 import com.pocketSalon.miniproject.dto.DesignerDTO
-import com.pocketSalon.miniproject.repository.ReservationRepository
+import com.pocketSalon.miniproject.domain.repository.ReservationRepository
 import com.pocketSalon.miniproject.dto.ReservationResponseDTO
 import com.pocketSalon.miniproject.dto.ReviewResponseDTO
-import com.pocketSalon.miniproject.repository.DesignerRepository
+import com.pocketSalon.miniproject.domain.repository.DesignerRepository
 import org.springframework.stereotype.Service
 
 @Service
