@@ -11,7 +11,7 @@ class Members(
 
     @Column(nullable = false)
     var name: String
-):BasicEntity() {
+):BaseEntity() {
     @Id
     @Column(name = "id", nullable = false)
     var id: String = "" //ID는 나중에 수동으로 설정

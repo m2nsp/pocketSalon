@@ -13,7 +13,7 @@ class Review(
 
     @Column(nullable = false)
     var createdAt: LocalDate
-) {
+):BaseEntity() {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "reviewId", nullable = false)

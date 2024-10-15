@@ -13,7 +13,7 @@ class Reservation(
 
     @Column(nullable = false)
     var createdAt: LocalDate
-) {
+): BaseEntity(){
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "reservationId", nullable = false)

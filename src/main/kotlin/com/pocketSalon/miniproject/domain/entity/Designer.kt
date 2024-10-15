@@ -1,5 +1,6 @@
 package com.pocketSalon.miniproject.domain.entity
 
+import com.fasterxml.jackson.databind.ser.Serializers.Base
 import com.pocketSalon.miniproject.domain.constant.specialty
 import jakarta.persistence.*
 
@@ -9,7 +10,7 @@ class Designer(
     phoneNumber: String,
     introduction: String,
     specialty: specialty
-) {
+):BaseEntity() {
     @Id
     @Column(name = "D_id", nullable = false)
     var D_id: String = ""
