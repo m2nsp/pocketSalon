@@ -11,8 +11,7 @@ class Reservation(
     @Column(nullable = false)
     var reservationTime: LocalDate,
 
-    @Column(nullable = false)
-    var createdAt: LocalDate
+    var createdAt: LocalDate?
 ): BaseEntity(){
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -27,5 +26,5 @@ class Reservation(
     // 멤버와 다대일 관계 설정
     @ManyToOne
     @JoinColumn(name = "memberId", nullable = false)
-    lateinit var member: Members
+    lateinit var member: Member
 }
