@@ -3,7 +3,7 @@ package com.pocketSalon.miniproject.domain.entity
 import jakarta.persistence.*
 
 @Entity
-class Members(
+class Member(
     @Column(nullable = false)
     var password: String,
 
