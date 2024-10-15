@@ -23,7 +23,7 @@ class Review(
 
     @ManyToOne
     @JoinColumn(name = "reviewerId", nullable = false)
-    lateinit var reviewer: Members  // ManyToOne 관계로 Members 엔티티와 연결  -- 할당이 필요하므로 lateinit 사용
+    lateinit var reviewer: Member  // ManyToOne 관계로 Members 엔티티와 연결  -- 할당이 필요하므로 lateinit 사용
 
     @ManyToOne
     @JoinColumn(name = "designerId", nullable = false)
